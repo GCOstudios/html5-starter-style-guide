@@ -1,10 +1,8 @@
-// styles.scss
-.testing {
-  width: percentage(5/7);
-}
+// Reboot Reset
+@import 'bootstrap-reboot';
 
-body {
-	background-color: white;
-	border-radius: 5px;
-	appearance: none;
-}
+// Variables and Mixins
+@import 'utilities/var';
+
+// Layout
+@import 'layout';
