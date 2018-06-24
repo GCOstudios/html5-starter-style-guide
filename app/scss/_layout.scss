@@ -1,5 +1,6 @@
 body {
     padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 main {
@@ -9,13 +10,13 @@ main {
     margin: auto;
 
     .primary {
-        width: 72%;
+        width: 67%;
         margin-right: auto;
     }
 
     .secondary {
         background-color: $color__aqua-haze;
-        width: 25%;
+        width: 30%;
     }
 }
 

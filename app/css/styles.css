@@ -243,7 +243,8 @@ template {
 [hidden] {
   display: none !important; }
 body {
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
 main {
   display: -webkit-box;
@@ -255,11 +256,11 @@ main {
   max-width: 1180px;
   margin: auto; }
   main .primary {
-    width: 72%;
+    width: 67%;
     margin-right: auto; }
   main .secondary {
     background-color: #f2f5f8;
-    width: 25%; }
+    width: 30%; }
 
 .page-title {
   background-color: #f2f5f8;
