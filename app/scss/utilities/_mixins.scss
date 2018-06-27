@@ -1,0 +1,164 @@
+// ================================
+// Backgrounds
+// ================================
+
+// Example usage:
+// .cover-photo {
+//   @include bg-cover;
+// }
+
+@mixin bg-cover($position: 50% 50%) {
+    background-position: $position;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @mixin hide-image {
+    display: block;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  // ================================
+  // Gradients
+  // ================================
+  
+  // Example usage:
+  // .simple-gradient {
+  //   @include gradient(#fcd116, peachpuff);
+  // }
+  
+  @mixin gradient($starting-color, $ending-color) {
+    background: $starting-color;
+    background:
+      linear-gradient(
+        to bottom,
+          $starting-color 0,
+          $ending-color 100%
+      );
+  }
+  
+  
+  // Example usage:
+  // .simple-gradient {
+  //   @include diagonal-stripes(50px, #fcd116, peachpuff);
+  // }
+  
+  //codepen.io/tschisler/pen/lBJID
+  
+  @mixin diagonal-stripes($size: 100px, $color--stripe: #eee, $background: #333) {
+    background-size: $size $size;
+    background-color: $background;
+    background-image:
+      linear-gradient(
+        -45deg,
+          $color--stripe 25%,
+          $background 25%,
+          $background 50%,
+          $color--stripe 50%,
+          $color--stripe 75%,
+          $background 75%,
+          $background
+      );
+  }
+  
+  // ================================
+  // Font Icons
+  // ================================
+  
+  // Example usage:
+  // .label:before {
+  //   @include font-icon('\f0d2');
+  // }
+  
+  @mixin font-icon($glyph) {
+    content: $glyph;
+    font-family: $font-icon;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: normal;
+    speak: none;
+  }
+  
+  // ================================
+  // Breakpoint
+  // ================================
+  
+  // http://jakearchibald.github.io/sass-ie/
+  
+  // Example Usage:
+  // .element {
+  //   @include breakpoint($bp-medium) {}
+  // }
+  
+  @mixin breakpoint($flex-pivot) {
+  
+    @if $bp-in-ems {
+  
+      @media (min-width: ce(su($flex-pivot))) {
+        @content;
+      }
+  
+    }
+    @else {
+  
+      @media (min-width: $flex-pivot) {
+        @content;
+      }
+  
+    }
+  
+  }
+  
+  @mixin maxbp($flex-pivot) {
+  
+      @if $bp-in-ems {
+  
+        @media (max-width: ce(su($flex-pivot), 16) - em(1, 16)) {
+          @content;
+        }
+  
+      }
+      @else {
+  
+        @media (max-width: $flex-pivot - 1px) {
+          @content;
+        }
+  
+      }
+  
+  }
+  
+  // ================================
+  // List Reset
+  // ================================
+  
+  // Example usage:
+  // nav {
+  //   @include list-reset;
+  // }
+  // nav ul {
+  //   @include list-reset;
+  // }
+  // ul { @include list-rest}
+  
+  @mixin list-reset {
+  
+    &, ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+      li {
+         margin: 0;
+         padding: 0;
+      }
+  
+  }
