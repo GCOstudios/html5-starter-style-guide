@@ -3,6 +3,11 @@
 
 // Variables and Mixins
 @import 'utilities/var';
+@import 'utilities/functions';
+@import 'utilities/mixins';
 
 // Layout
 @import 'layout';
+
+// Elements
+@import 'elements/images';
