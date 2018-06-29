@@ -258,11 +258,16 @@ main {
   main .primary {
     width: 67%;
     margin-right: auto; }
-  main .secondary {
+  main .sidebar {
     background-color: #f2f5f8;
-    width: 30%; }
+    width: 30%;
+    padding: 1.25rem; }
 
 .page-title {
   background-color: #f2f5f8;
   padding: 1rem 0;
   text-align: center; }
+
+img {
+  width: 100%;
+  max-width: 100%; }
