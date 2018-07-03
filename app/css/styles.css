@@ -258,6 +258,14 @@ main {
   main .primary {
     width: 67%;
     margin-right: auto; }
+    main .primary > p {
+      font-weight: 500;
+      background-color: #f2f5f8;
+      margin-bottom: 2.5rem;
+      padding: 1rem;
+      letter-spacing: 1.5px; }
+    main .primary section {
+      margin-bottom: 3.75rem; }
   main .sidebar {
     background-color: #f2f5f8;
     width: 30%;

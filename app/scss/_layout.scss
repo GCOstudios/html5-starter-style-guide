@@ -12,6 +12,18 @@ main {
     .primary {
         width: 67%;
         margin-right: auto;
+
+        > p {
+            font-weight: 500;
+            background-color: $color__aqua-haze;
+            margin-bottom: cre(40);
+            padding: 1rem;
+            letter-spacing: 1.5px;
+        }
+
+        section {
+            margin-bottom: cre(60);
+        }
     }
 
     .sidebar {
