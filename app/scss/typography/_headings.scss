@@ -4,5 +4,33 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family__headings;
+  display: block;
+  font-family: $font-family__headings;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
