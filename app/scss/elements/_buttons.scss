@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    border: 1px solid black;
+    padding: cre(10) cre(18);
+    text-decoration: none;
+    margin-bottom: cre(10);
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-default {
+    
+}
