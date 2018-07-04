@@ -308,3 +308,12 @@ h6 {
 img {
   width: 100%;
   max-width: 100%; }
+
+.btn {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.625rem 1.125rem;
+  text-decoration: none;
+  margin-bottom: 0.625rem; }
+  .btn:hover {
+    text-decoration: none; }
