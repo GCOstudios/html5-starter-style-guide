@@ -314,6 +314,15 @@ img {
   border: 1px solid black;
   padding: 0.625rem 1.125rem;
   text-decoration: none;
-  margin-bottom: 0.625rem; }
+  margin-bottom: 0.625rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; }
   .btn:hover {
+    color: white;
     text-decoration: none; }
+
+.btn-default {
+  background-color: #95a5a6;
+  color: white; }
+  .btn-default:hover {
+    background-color: #6d8082; }
