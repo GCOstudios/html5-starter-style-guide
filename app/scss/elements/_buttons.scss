@@ -4,12 +4,19 @@
     padding: cre(10) cre(18);
     text-decoration: none;
     margin-bottom: cre(10);
+    transition: 0.3s ease;
 
     &:hover {
+        color: white;
         text-decoration: none;
     }
 }
 
 .btn-default {
-    
+    background-color: $color__concrete;
+    color: white;
+
+    &:hover {
+        background-color: darken($color__concrete, 15%);
+    }
 }
