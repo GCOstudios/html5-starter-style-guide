@@ -305,6 +305,10 @@ h5 {
 h6 {
   font-size: 1rem; }
 
+blockquote {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-left: 4px solid #95a5a6; }
+
 img {
   width: 100%;
   max-width: 100%; }
