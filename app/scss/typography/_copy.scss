@@ -5,3 +5,8 @@ p {
 dfn, cite, em, i {
 	font-style: italic;
 }
+
+blockquote {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-left: 4px solid $color__concrete;
+}
