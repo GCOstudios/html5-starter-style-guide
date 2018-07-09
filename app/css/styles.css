@@ -305,6 +305,12 @@ h5 {
 h6 {
   font-size: 1rem; }
 
+p {
+  margin-bottom: 1.5rem; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
 blockquote {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   border-left: 4px solid #95a5a6; }
