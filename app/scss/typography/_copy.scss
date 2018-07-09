@@ -9,4 +9,8 @@ dfn, cite, em, i {
 blockquote {
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     border-left: 4px solid $color__concrete;
+
+    &::before {
+        content: '';
+    }
 }
