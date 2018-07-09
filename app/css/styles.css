@@ -314,6 +314,8 @@ dfn, cite, em, i {
 blockquote {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   border-left: 4px solid #95a5a6; }
+  blockquote::before {
+    content: ''; }
 
 img {
   width: 100%;
