@@ -338,3 +338,6 @@ img {
   color: white; }
   .btn-default:hover {
     background-color: #6d8082; }
+
+table {
+  width: 100%; }
