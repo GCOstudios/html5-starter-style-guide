@@ -345,3 +345,9 @@ table {
   table th {
     border: 1px solid #95a5a6;
     padding: 0.5rem; }
+  table th {
+    background-color: #95a5a6;
+    color: white;
+    border-right: 1px solid white; }
+    table th:last-child {
+      border-right: 1px solid #95a5a6; }
